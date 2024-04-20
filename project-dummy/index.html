@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game</title>
+    <!-- Link für Grundgerüst -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <!-- Link für Titel -->
+    <link rel="stylesheet" href="./css/akt1/start/title.css"/>
+    <!-- Link für Hintergründe -->
+    <link rel="stylesheet" href="./css/akt1/start/start.css">
+    <!-- Link für Animationen für Text -->
+    <link rel="stylesheet" href="./css/animation-text.css">
+    <!-- Link für Demo Css -->
+    <link rel="stylesheet" href="./css/akt1/demo/demo.css">
+    <!-- Link für die erste Seite -->
+    <link rel="stylesheet" href="./css/akt1/start/eins.css">
+  </head>
+  <body style="background-color: black;">
+    <div id="eins" class="yes">
+      <div id="home" class="home">
+        <div class="home-home">
+          <div class="container">
+            <div class="glitch" data-text="DMid">DMid</div>
+            <div class="glow">DMid</div>
+            <p class="subtitle">BY Corvin, Luca, Simon, Jannik</p>
+            </div>
+            <button id="start" onclick="toggleFolie('eins', 'zwei', 2000)">
+              Start
+            </button>
+          <br>
+          <button onclick="window.location.href='./backroundpngs/IMG_0447.jpeg'">Quit</button>
+        </div>
+      </div>
+    </div>
+    <div id="zwei" class="no">
+      <div class="f2-home">
+        <div class="text-container">
+          <p class="typewriter-text">.lol.lol.lol.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zwei', 'drei', 500)">Narichten</button>
+            </div>          
+            <div class="word-box">
+              <button onclick="toggleFolie('zwei', 'sechs', 500); naricht3() ">Raus gehen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div id="drei" class="no">
+      <div class="f3-home">
+        <div class="text-container">
+          <p class="typewriter-text">Welche Naricht möchtest du lesen?</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('drei', 'vier', 500)">Naricht 1</button>
+            </div>            
+            <div class="word-box">
+              <button onclick="toggleFolie('drei', 'fünf', 500)">Naricht 2</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="vier" class="no">
+      <div class="f4-home">
+        <div class="text-container">
+          <p class="typewriter-text">Mein **** ist sehr groß</p>
+          <div class="word-container">
+            <div class="word-box"><button onclick="toggleFolie('vier', 'sechs', 500); naricht1()">Verstanden</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fünf" class="no">
+      <div class="f5-home">
+        <div class="text-container">
+          <p class="typewriter-text">text2</p>
+          <div class="word-container">
+            <div class="word-box"><button onclick="toggleFolie('fünf', 'sechs', 500); naricht2()">verstanden </button></div>
+          </div>
+       </div>
+      </div>
+    </div>
+    <div id="sechs" class="no">
+      <div class="f6-home">
+        <div class="text-container">
+          <p class="typewriter-text">Hey Alexa, womit sollte ich heute zur Schule fahren?</p>
+          <div class="word-container">
+            <div class="word-box"><button onclick="toggleFolie('sechs', 'siebens', 500)">Schule</button></div>
+            <div class="word-box"><button onclick="toggleFolie('sechs', 'siebend', 500)">Demo</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="siebend" class="no">
+      <div class="f7d-home">
+        <div class="text-container">
+          <p class="typewriter-text">Hier sind infos zur Demo und der Text zu person 1</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('siebend', 'achtd', 500)">Person angucken (P1 + 2)</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('siebend', 'neund', 500)">Person ignorieren ( P1 + 1)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="achtd" class="no">
+      <div class="f8d-home">
+        <div class="text-container">
+          <p class="typewriter-text">'extremes' bild </p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('achtd', 'neund', 500)">posten (P1 + 1; P2 - 1; P3 - 2; var bild= ja )</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('achtd', 'neund', 500)">nicht posten (P1 - 1; var bild= nein )</button>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="neund" class="no">
+      <div class="f9d-home">
+        <div class="text-container">
+          <p class="typewriter-text">Fhart zur Schule + Konservation mit P2</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('neund', 'zehnd', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zehnd" class="no">
+      <div class="f10d-home">
+        <div class="text-container">
+          <p class="typewriter-text">bild</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zehnd', 'elfd', 500)">ja</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('zehnd', 'zwölfd', 500)">nein</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="elfd" class="no">
+      <div class="f11d-home">
+        <div class="text-container">
+          <p class="typewriter-text">warum das foto</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('elfd', 'vierzehnd', 500)">wollte</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('elfd', 'dreizehnd', 500)">musste</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zwölfd" class="no">
+      <div class="f12d-home">
+        <div class="text-container">
+          <p class="typewriter-text">p2 labert</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zwölfd', 'sechszehnd', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dreizehnd" class="no">
+      <div class="f13d-home">
+        <div class="text-container">
+          <p class="typewriter-text">hilfreicher kommentar p2</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('dreizehnd', 'sechszehnd', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="vierzehnd" class="no">
+      <div class="f14d-home">
+        <div class="text-container">
+          <p class="typewriter-text">negativer kommentar von P2 (P2 - 1)</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('vierzehnd', 'fünfzehnd', 500)">zustimmen</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('vierzehnd', 'fünfzehnd', 500)">dagegen stimmen (P2 - 1)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fünfzehnd" class="no">
+      <div class="f15d-home">
+        <div class="text-container">
+          <p class="typewriter-text">schulglocke oben text 1</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="ausgangakt1('fünfzehnd')">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fünfzehn_1d" class="no">
+      <div class="f15d-home">
+        <div class="text-container">
+          <p class="typewriter-text">schulglocke oben text 2</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="ausgangakt1('fünfzehn_1d')">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sechszehnd" class="no">
+      <div class="f16d-home">
+        <div class="text-container">
+          <p class="typewriter-text">schulglocke unten</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('sechszehnd', 'siebzehnd', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="siebzehnd" class="no">
+      <link rel="stylesheet" href="./css/akt1/demo/siebzehnd.css">
+      <div class="f17d-home">
+        <div class="text-container">
+          <p class="typewriter-text">'relativ' netter Kommentar p2</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="ausgangakt1()">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="siebens" class="no">
+      <link rel="stylesheet" href="./css/akt1/demo/siebend.css">
+      <div class="f7s-home">
+        <div class="text-container">
+          <p class="typewriter-text">fahrt zur schule + konversation mit p2</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="nachrichts()"> weiter ( abstimmung mit var Naricht )</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="achts" class="no">
+      <link rel="stylesheet" href="./css/akt1/demo/achtd.css">
+      <div class="f8s-home">
+        <div class="text-container">
+          <p class="typewriter-text">freundlicher kommentar von P2</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('achts', 'zwölfs', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="neuns" class="no">
+      <link rel="stylesheet" href="./css/akt1/demo/neund.css">
+      <div class="f9s-home">
+        <div class="text-container">
+          <p class="typewriter-text">warum hast du die narchicht nicht gelesen?</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('neuns', 'zehns', 500)">konnte nicht</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('neuns', 'elfs', 500)">wollte nicht</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zehns" class="no">
+      <link rel="stylesheet" href="./css/akt1/demo/zehnd.css">
+      <div class="f10s-home">
+        <div class="text-container">
+          <p class="typewriter-text">verständnisvoller kommentar</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zehns', 'zwölfs', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="elfs" class="no">
+      <link rel="stylesheet" href="./css/akt1/demo/elfd.css">
+      <div class="f11s-home">
+        <div class="text-container">
+          <p class="typewriter-text">negativer kommentar von p2 (p2 - 1)</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('elfs', 'vierzehns', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zwölfs" class="no">
+      <link rel="stylesheet" href="./css/akt1/demo/elfd.css">
+      <div class="f12s-home">
+        <div class="text-container">
+          <p class="typewriter-text">schulglocke</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zwölfs', 'dreizehns', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dreizehns" class="no">
+      <div class="f12s-home">
+        <div class="text-container">
+          <p class="typewriter-text">p2 labert</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="ausgangakt1('dreizehns')">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ausgang1" class="no">
+      <div class="f12s-home">
+        <div class="text-container">
+          <p class="typewriter-text">p2 geht in guter stimmung</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('ausgang1', '2eins', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ausgang2" class="no">
+      <div class="f12s-home">
+        <div class="text-container">
+          <p class="typewriter-text">p2 geht leicht diztanziert</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('ausgang2', '2eins', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ausgang3" class="no">
+      <div class="f12s-home">
+        <div class="text-container">
+          <p class="typewriter-text">p2 geht diztanziert</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('ausgang3', '2eins', 500)">weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+<script src="./script.js"></script>
+<script src="./score.js"></script>
+</html>
