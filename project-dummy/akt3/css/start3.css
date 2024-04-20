@@ -1,0 +1,52 @@
+#eins {
+    background-color: black;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('/project-dummy/backroundpngs/f1-background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.home .home-home button{
+    border: solid 1px;
+    border-radius: 200px;
+    border-color: rgb(212, 212, 212);
+    background-color: transparent;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+
+    color:rgb(212, 212, 212);
+    font-size: xx-large;
+    transition: 0.5s;
+
+}
+
+.home button:hover {
+    color: black;
+    background-color: rgb(212, 212, 212);
+}
+
+.home #start {
+
+    margin-top: 40vh;
+    margin-bottom: 5vh;
+}
+
+.home-home  {
+    border-radius: 20px;
+    height: 700px;
+    width: 950px;
+
+    background-color: rgba(41, 41, 41, 0.568);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

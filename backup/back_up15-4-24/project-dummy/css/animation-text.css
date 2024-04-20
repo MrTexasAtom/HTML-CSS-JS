@@ -1,0 +1,124 @@
+.text-container {
+    background-color: rgba(41, 41, 41, 0.568);
+    text-align: center;
+    margin-bottom: 1vh;
+    border-radius: 50px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    max-width: 1000px;
+  }
+
+  .prio {
+    text-align: center;
+  }
+
+  .narchicht {
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border-radius: 5px;
+    align-items: center; 
+    display: flex;
+  } 
+
+   .profil {
+    display: block; 
+   }
+
+
+   .profile-pic {
+      width: 50px; 
+      height: 50px; 
+      border-radius: 20%; 
+      margin-right: 10px; 
+   }
+
+   .text {
+      display: flex;
+      margin-left: 25px;
+    }
+    
+  .player .name {
+    margin-left: 15px;
+  }
+
+  .p1 {
+    margin-right: 2px;
+  }
+
+  .p2 .name {
+    margin-right: 0px;
+  }
+
+  .p3 {
+    margin-right: 2px;
+  }
+
+
+  .text-containerzp {
+    background-color: rgba(41, 41, 41, 0.568);
+    margin-bottom: 1vh;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    max-width: 1000px;
+  }
+  
+.typewriter-text {
+  overflow: hidden;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: x-large;
+}
+  
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+  
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+  
+.word-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+  
+.word-box button{
+  margin-top: 5vh;
+  border: solid 1px;
+  border-radius: 200px;
+  border-color: rgb(212, 212, 212);
+  background-color: transparent;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  color:rgb(212, 212, 212);
+  font-size: large;
+  transition: 0.5s;
+}
+  
+.word-box button:hover {
+  color: black;
+  background-color: rgb(212, 212, 212);
+  cursor: pointer;
+}
+  

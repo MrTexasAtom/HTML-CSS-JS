@@ -1,0 +1,14 @@
+.f7d-home, .f8d-home, .f9d-home, .f10d-home, .f11d-home, .f12d-home, .f13d-home, .f14d-home, .f15d-home, .f16d-home, .f17d-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('/project-dummy/backroundpngs/f2-background.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#sieben, #achtd, #neund, #zehnd, #elfd, #zwölfd, #dreizehnd, #vierzehnd, #fünfzehnd, #fünfzehn_1d, #sechszehnd, #siebzehnd {
+  background-color: black;
+}

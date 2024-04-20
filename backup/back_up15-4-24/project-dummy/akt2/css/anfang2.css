@@ -1,0 +1,21 @@
+#zwei, #drei, #vier, #fünf, #sechs, #sieben, #acht, #neun, #zehn, #elf, #zwölf, #dreizehn, #vierzehn, #fünfzehn, #sechszehn, #siebenzehn, #achtzehn, #neunzehn, #zwanzig, #einundzwanzig, #zweiundzwanzig, #dreiundzwanzig, #vierundzwanzig, #fuenfundzwanzig, #sechsundzwanzig {
+  background-color: black;
+}
+    
+.f2-home, .f3-home, .f4-home, .f5-home, .f6-home, .f7-home, .f8-home, .f9-home, .f10-home, .f11-home, .f12-home, .f13-home, .f14-home, .f15-home, .f16-home, .f17-home, .f18-home, .f19-home, .f20-home, .f21-home, .f22-home, .f23-home, .f24-home, .f25-home, .f26-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+}
+  
+.f2-home, .f3-home, .f4-home, .f5-home, .f6-home {
+  background-image: url('/project-dummy/backroundpngs/akt2-background1.png');
+}
+  
+.f7-home, .f8-home, .f9-home, .f10-home, .f11-home, .f12-home, .f13-home, .f14-home, .f15-home, .f16-home, .f17-home, .f18-home, .f19-home, .f20-home, .f21-home, .f22-home, .f23-home, .f24-home, .f25-home, .f26-home  {
+  background-image: url('/project-dummy/backroundpngs/akt2-background2.png');
+}

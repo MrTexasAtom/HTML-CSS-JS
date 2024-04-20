@@ -1,0 +1,21 @@
+#zwei, #drei, #vier, #fünf, #sechs, #sieben, #acht, #neun, #zehn {
+  background-color: black;
+}
+    
+.f2-home, .f3-home, .f4-home, .f5-home, .f6-home, .f7-home, .f8-home, .f9-home, .f10-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  
+}
+   
+.f2-home {
+  background-image: url('/project-dummy/backroundpngs/f6-background1.png');
+}
+
+.f3-home, .f4-home, .f5-home, .f6-home, .f7-home, .f8-home, .f9-home, .f10-home {
+  background-image: url('/project-dummy/backroundpngs/Mall.png');
+}

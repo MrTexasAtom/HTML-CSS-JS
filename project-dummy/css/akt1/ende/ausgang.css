@@ -1,0 +1,17 @@
+.akt1-home, .akt2-home, .akt3-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.akt1-home, .akt2-home, .akt3-home {
+    background-image: url('/project-dummy/backroundpngs/f8-background.png');
+}
+
+#akt1, #akt2, #akt3{
+    background-color: black;
+}

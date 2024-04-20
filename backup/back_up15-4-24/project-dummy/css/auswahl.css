@@ -1,0 +1,103 @@
+.auswahl2 {
+    background-image: url("/project-dummy/backroundpngs/f1-background.png"); 
+    background-size: cover;
+    background-position: center;
+    font-family:  Arial, sans-serif; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.schrift {
+    margin-top: 80px; 
+    font-size: 60px;
+}
+
+.auswahl {
+    background-color: black; 
+    border-radius: 20px; 
+    height: 700px; 
+    width: 1200px; 
+    background-color: rgba(41, 41, 41, 0.568); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oben  {
+    margin-top: 0px; 
+    display: inline-flex;
+}
+
+.unten {
+    margin-top: 100px; 
+    display: inline-flex; 
+}
+
+.button {
+    margin-top: 90px; 
+    margin-right: 170px; 
+    margin-left: 170px; 
+    border: solid 1px; 
+    border-radius: 200px; 
+    border-color: rgb(212, 212, 212); 
+    background-color: transparent; 
+    padding-top: 40px; 
+    padding-left: 50px; 
+    padding-bottom: 40px; 
+    padding-right: 50px; 
+    color:rgb(212, 212, 212); 
+    font-size: x-large; 
+    transition: 0.5s;
+}
+
+.button:hover {
+    color: black; 
+    background-color: rgb(212, 212, 212);
+}
+
+.e {
+    background-size: 110px, 105px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/project-dummy/Profilbilder/Profilbild1.jpeg");
+}
+
+.z {
+    background-size: 120px, 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/project-dummy/Profilbilder/Profilbild2.jpg");
+}
+
+.d {
+    background-size: 120px, 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/project-dummy/Profilbilder/Profilbild3.jpg");
+}
+
+.v {
+    background-size: 120px, 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/project-dummy/Profilbilder/Profilbild4.jpg");
+}
+
+.f {
+    background-size: 120px, 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/project-dummy/Profilbilder/Profilbild5.jpg");
+}
+
+.s {
+    background-size: 120px, 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/project-dummy/Profilbilder/Profilbild6.jpg");
+}

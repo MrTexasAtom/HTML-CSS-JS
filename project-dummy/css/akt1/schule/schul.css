@@ -1,0 +1,21 @@
+.f7s-home, .f7sp-home, .f8s-home, .f9s-home, .f10s-home, .f11s-home, .f12s-home, .f13s-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.f7s-home {
+    background-image: url('/project-dummy/backroundpngs/f6-background1.png');
+}
+
+.f7sp-home, .f8s-home, .f9s-home, .f10s-home, .f11s-home, .f12s-home, .f13s-home, .zwanzig-home {
+    background-image: url('/project-dummy/backroundpngs/f8-background.png');
+}
+
+#siebens, #achts, #neuns, #zehns, #elfs, #zwölfs {
+    background-color: black;
+}

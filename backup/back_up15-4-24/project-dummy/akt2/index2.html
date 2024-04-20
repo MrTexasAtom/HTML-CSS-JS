@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Game</title>
+    <!-- Link für Text -->
+    <link rel="stylesheet" href="./css/text2.css">
+    <!-- Link für Grundgerüst -->
+    <link rel="stylesheet" href="./css/style2.css">
+    <!-- hintergründe -->
+    <link rel="stylesheet" href="./css/anfang2.css">
+    <!-- Link für die erste folie -->
+    <link rel="stylesheet" href="./css/start2.css">
+    
+  </head>
+  <body style="background-color: black;">
+    
+    <div id="zwei" class="yes">
+      <div class="f2-home">
+        <div class="text-container">
+          <p class="text">Der	Unterricht	verläuft	ohne	besondere	Vorkommnisse,	abgesehen	davon,	dass	ihr	zehn	Minuten	warten	müsst	bis	euer	Lehrer	kommt.	Als	er	gerade	eine	neue	Aufgabe	klären	möchte	öffnet	sich	auf	einmal	die	Zimmertür	und	ein	jugendliches	Mädchen	platzt	in	den	Unterricht.</p>
+          <p class="text">Emily	lässt	die	Tür	hinter	sich	ins	Schloss	fallen,	läuft	unbekümmert	durch	die	Klasse	und	setzt	sich	neben	dich	auf	einen	freien	Sitzplatz,	nur	um	dann	mit	gespieltem	Interesse	auf	die	Tafel	zu	schauen.	</p>
+          <p class="text">Die	Lehrer	der	Schule	hatten	schon	seit	langem	aufgegeben	Emily	zu	belehren.	Stattdessen	nimmt	der	Lehrer	das	Klassenbuch	und	macht	sehr	betont	einen	Eintrag,	während	er	unüberhörbar	etwas	mit	‚Emily‘	und	‚wiederholt	zu	spät‘	murmelt.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zwei', 'drei', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="drei" class="no">
+      <div class="f3-home">
+        <div class="text-containerzp">
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">Emily	beugt	sich	zu	dir	herüber.	„Warum	regt	der	sich	eigentlich	so	auf?	Ich	wette	ihr	habt	bis	jetzt	eh	nur	das	von	letzter	Stunde	wiederholt.“,	flüstert	sie	dir	zu	während	der	Lehrer	sich	wieder	zur	Tafel	dreht.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('drei', 'vier', 500); c()">Emily anlügen</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('drei', 'fuenf', 500); c()">Die Wahrheit sagen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="vier" class="no">
+      <div class="f4-home">
+        <div class="text-containerzp">
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">„Ausnahmsweise	haben	wir	tatsächlich	schon	was	Neues	besprochen.“</p>
+          </div>
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">Du	schmunzelst	während	Emilys	Gesichte	etwas	Farbe	verliert	und	sie	versucht	noch	zu	erkennen	was	der	Lehrer	Gerede	weggewischt	hat.</p>
+          </div>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">Ihre	Worte	sind	jedoch	so	unbekümmert	wie	immer.	„Ach,	das	krieg	ich	schon	aufgeholt.“</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('vier', 'sechs', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fuenf" class="no">
+      <div class="f5-home">
+        <div class="text-containerzp">
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">„Wie	immer	halt.“</p>
+          </div>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">„Wusst‘	ich‘s	doch.“,	sagt	Emily	und	schmunzelt	gehässig	den	Lehrer	an.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('fuenf', 'sechs', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sechs" class="no">
+      <div class="f6-home">
+        <div class="text-container">
+          <p class="text">Du überlegst wie du eigentlich Emily‘s Foto von heute morgen von der Demo findest.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('sechs', 'acht', 500); p1 = p1 +1">Ich finde das Foto gut</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('sechs', 'sieben', 500); p1 = p1 -1">Ich finde das Foto schlecht</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sieben" class="no">
+      <div class="f7-home">
+        <div class="text-containerzp">
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">„Glaubst	du	eigentlich	wirklich	das	dieses	Foto	eine	gute	Idee	war?“</p>
+          </div>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">Emily	schaut	dich	verdattert	an.	„Natürlich,	je	mehr	Aufmerksamkeit	desto	besser!“</p>
+          </div>
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">Du	fällst	ihr	förmlich	ins	Wort.	„Aber	Sachbeschädigung?“</p>
+          </div>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">„Die	Leute	hör‘n	halt	erst	zu	wenn	es	ihnen	weh	tut.“	Emily	wendet	sich	ab,	offensichtlich	ist	das	Gespräch	für	sie	beendet.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('sieben', 'neun', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="acht" class="no">
+      <div class="f8-home">
+        <div class="text-containerzp">
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">„Das	Foto	war	im	übrigen	super.“</p>
+          </div>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">Emily	lächelt	breit.	„Ich	weiß,	oder?“	Sie	wirkt	begeistert,	doch	als	der	Lehrer	sich	räuspert	wird	ihre	Stimme	wieder	leise	und	sie	richtet	ihre	Aufmerksamkeit	auf	den	Unterricht.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('acht', 'neun', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="neun" class="no">
+      <div class="f9-home">
+        <div class="text-containerzp">
+          <p class="prio">Der	Unterricht	verläuft	ohne	weitere	Unterbrechungen,	abgesehen	davon	das	Emily	fragt	ob	„plus	und	plus“	nicht	„minus“	ergibt.</p>
+          <p class="prio">Nach	langsam	dahinfließenden	siebzig	Minuten	läutet	schließlich	die	Pausenglocke	und	erlöst	dich	von	sich	ewig	wiederholenden	Wurzelberechnungen.</p>
+          <p class="prio">Kaum	kommst	du	in	den	Pausenbereich	siehst	du	schon	wie	Emily,	die	vor	dir	aus	dem	Klassenraum	geeilt	war,	sich	mal	wieder	mit	Jannik	streitet.</p>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">Als	du	an	ihnen	vorbeiläufst	hörst	du	nur	Emily	rufen:	„Ach	halt	doch	dein	Maul,	du	hast	doch	eh	keine	Ahnung.“</p>
+          </div>
+          <p class="prio">Als	du	näher	kommst	siehst	du,	dass	auch	Anthony	bei	den	beiden	steht	und	dir	einen,	um	Hilfe	flehenden,	Blick	zu	zuwirft.	Wiederwillig	läufst	du	zu	den	dreien	herüber	und	sofort	zieht	Jannik	dich	ins	Gespräch.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="bildd(); i()">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zehn" class="no">
+      <div class="f10-home">
+        <div class="text-containerzp">
+          <div class="narchicht p3 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P3.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Jannik</div>
+            </div>
+            <p class="text">„Na	toll,	noch	so	eine	Verrückte.	Was	ist	auf	einmal	in	euch	alle	geschossen?“</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zehn', 'zwölf', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="elf" class="no">
+      <div class="f11-home">
+        <div class="text-containerzp">
+          <div class="narchicht p3 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P3.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Jannik</div>
+            </div>
+            <p class="text">„Vielleicht	mal	jemand	mit	etwas	Vernunft.	Erklärst	du	Emily	bitte	einmal	warum	ihre	Aktion	auf	dem	Foto	totaler	Schwachsinn	war?“</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('elf', 'zwölf', 500); ">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zwölf" class="no">
+      <div class="f12-home">
+        <div class="text-containerzp">
+          <p class="prio">Bevor	du	überhaupt	den	Mund	aufmachen	kannst	springt	Emily	schon	für	dich	ein.</p>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">„Jetzt	sei	doch	leise,	das	Foto	war	großartig,	du	bist	nur	zu	hirnverbrannt	um	das	zu	verstehen!“</p>
+          </div>
+          <p class="prio">Anthony	versucht	schlichtend	einzugreifen,	doch	auch	er	wird	nicht	zu	Wort	gelassen,	als	Jannik	sich	erzürnt	verteidigt. </p>
+          <div class="narchicht p3 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P3.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Jannik</div>
+            </div>
+            <p class="text">Hirnverbrannt?	Euch	Klimaaktivisten	hat	doch	jemand	in‘s	Hirn	geschissen!“</p>
+          </div>
+          <div class="narchicht p2 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P2.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Anthony</div>
+            </div>
+            <p class="text">Emily	und	Jannik	starren	sich	im	folgenden	zornerfüllt	an,	während	Anthony	dir	einen	verzweifelnden	Blick	zu	wirft	und	dich	beinahe	anfleht	das	Gespräch	irgendwie	friedlich	zu	beenden.</p>
+          </div>
+          <p class="prio">Auf welche Seite stellst du dich?</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zwölf', 'dreizehn', 500); p1 = p1 + 1; p2 = p2 - 1; p3 = p3 - 2;">Auf die Seite von Emily</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('zwölf', 'vierzehn', 500); p1 = p1 - 1; p2 = p2 + 1; p3 = p3 - 1;">Auf die Seite von Anthony</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('zwölf', 'fuenfzehn', 500);p1 = p1 + 1; p2 = p2 - 1">Auf die Seite von Jannik</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dreizehn" class="no">
+      <div class="f13-home">
+        <div class="text-containerzp">
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">„Das	Foto	war	keine	schlechte	Idee,	die	Menschen	hören	halt	nicht	anders.“</p>
+          </div>
+          <p class="prio">Anthony	fasst	sich	an	die	Stirn	während	Jannik	noch	wütender	in	Emilys,	nun	hämisch	lächelndes,	Gesicht	starrt.</p>
+          <div class="narchicht p3 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P3.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Jannik</div>
+            </div>
+            <p class="text">Janniks	Gesicht	hingegen	verdunkelt	sich	und	er	rauscht	geradezu	von	euch	weg,	während	er	zum	Abschied	noch	„Euch	hat	doch	allen	jemand	in‘s	Hirn	geschissen!“	ruft.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="ausgang(dreizehn); i()">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="vierzehn" class="no">
+      <div class="f14-home">
+        <div class="text-containerzp">
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">„Das	Foto	war	vielleicht	nicht	der	richtige	Weg	aber	es	ist	jetzt	auch	nicht	so	tragisch,	also	beruhigt	euch	doch	beide	mal.“</p>
+          </div>
+          <p class="prio">Emily	schaut	dich	irritiert	an,	während	Jannik	zwar	etwas	beruhigt	aber	nicht	ganz	zufrieden	aussieht.	Wenigstens	wirft	Anthony	dir	ein	kurzes	aber	dankendes	lächeln	zu.</p>
+          <p class="prio">Jannik	dreht	sich	grummelnd	ab	und	geht,	während	Emily	dich	mit	überraschten	Blicken	mustert.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="ausgang(vierzehn); i()">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fuenfzehn" class="no">
+      <div class="f15-home">
+        <div class="text-containerzp">
+          <div class="narchicht player ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/User.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Du</div>
+            </div>
+            <p class="text">„Das	Foto	war	zugegebener	maßen	schon	sehr	grenzwertig…“	Bevor	du	überhaupt	zu	Ende	sprechen	kannst	unterbricht	dich	Emily	schon.</p>
+          </div>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">„Was	laberst	du	da?	Die	Leute	müssen	endlich	mal	die	Augen	aufmachen	und	sehen,	dass…“</p>
+          </div>
+          <div class="narchicht p3 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P3.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Jannik</div>
+            </div>
+            <p class="text">Jannik	entschließt	sich	dazu	Emily	nachzueifern	und	nun	sie	zu	unterbrechen.	„Die	Idee	war	einfach	beschissen!“</p>
+          </div>
+          <p class="prio">Anthony	versucht	derweil	sich	möglichst	unsichtbar	zu	machen.</p>
+          <div class="narchicht p3 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P3.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Jannik</div>
+            </div>
+            <p class="text">Jannik	wendet	sich	von	Emily	ab	und	dir	zu.	„Danke,	dass	wenigstens	du	ein	Gehirn	zu	haben	scheinst.“,	sagt	er	und	geht	mit	einem	halbwegs	zufriedenen	lächeln.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="ausgang(fuenfzehn); i()">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sechszehn" class="no">
+      <div class="f16-home">
+        <div class="text-containerzp">
+          <p class="prio">Emily	steht	auf	und	geht,	vermutlich	um	irgendwo	in	der	Schule	Umweltschutzslogans	and	die	Wände	zu	malen.	Sie	macht	das	häufiger	nachdem	sie	sich	mit	Jannik	gestritten	hat.</p>
+          <div class="narchicht p2 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P2.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Anthony</div>
+            </div>
+            <p class="text">Anthony	wendet	sich	hingegen	mit	einem	freundlichen	Lächeln	an	dich.	„Ich	wollte	später	noch	in	die	Stadt	fahren,	Ein	bisschen	durch	die	Läden	laufen	und	so.	Hast	du	Lust	mitzukommen?“</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('sechszehn', 'siebzehn', 500);">Klar gerne</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('sechszehn', 'achtzehn', 500);">Mir ist heute nicht so nach shoppen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="siebzehn" class="no">
+      <div class="f17-home">
+        <div class="text-containerzp">
+          <div class="narchicht p2 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P2.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Anthony</div>
+            </div>
+            <p class="text">„Schön,	ich	warte	dann	an	nach	der	Schule	and	der	Bushaltestelle	auf	dich.“</p>
+          </div>
+          <p class="prio">Er	pausiert	kurz,	während	die	Schulglocke	läutet	und	ihr	euch	auf	den	Weg	zu	eurem	Unterricht	macht.</p>
+          <div class="narchicht p2 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P2.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Anthony</div>
+            </div>
+            <p class="text">„Beeil	dich	vielleicht	ein	bisschen,	der	Bus	kommt	vier	Minuten	nach	Schulschluss	und	ansonsten	müssen	eine	Weile	auf	den	nächsten	warten.“</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="nextpage()">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="achtzehn" class="no">
+      <div class="f18-home">
+        <div class="text-containerzp">
+          <p class="prio">Anthony	behält	zwar	sein	Lächeln	bei,	doch	seine	Augen	verraten	leichte	Enttäuschung.</p>
+          <div class="narchicht p2 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P2.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Anthony</div>
+            </div>
+            <p class="text">„Natürlich,	wenn	dir	nicht	danach	ist,	musst	du	ja	nicht.“</p>
+          </div>
+          <p class="prio">Dann	läutet	die	Schulglocke	und	ihr	kehrt	in	euren	Unterricht	zurück.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('achtzehn', 'neunzehn', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="neunzehn" class="no">
+      <div class="f19-home">
+        <div class="text-container">
+          <p>Nach	dem	Unterricht	gehst	du	entspannt	zu	deiner	Bushaltestelle	und	wartest	bis	wenige	Minuten	später	dein	Bus	kommt.	</p>
+          <p>Zu	deiner	milden	Enttäuschung	ist	es	diese	mal	kein	E-Bus,	dabei	hattest	du	eigentlich	gehofft	dein	Handy	während	der	Fahrt	aufladen	zu	können.</p>
+          <p>Bei	dir	zu	Hause	angekommen	schließt	du	deine	Zimmertür	hinter	dir,	wirfst	deinen	Rucksack	in	eine	Ecke	und	setzt	dich	an	deinen	Computer,	um	den	Tag	gemütlich	ausklingen	zu	lassen.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="end();">Ende</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zwanzig" class="no">
+      <div class="f20-home">
+        <div class="text-containerzp">
+          <div class="narchicht p2 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P2.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Anthony</div>
+            </div>
+            <p class="text">Anthony	wendet	sich	mit	einem	freundlichen	Lächeln	an	dich.	„Übrigens,	ich	wollte	später	noch	in	die Stadt	fahren,	Ein	bisschen	durch	die	Läden	laufen	und	so.	Hast	du	Lust	mitzukommen?“</p>
+          </div>
+          <p class="prio">Noch	bevor	du	überhaupt	die	Möglichkeit	hast	darüber	nachzudenken	fällt	Emily	schon	ein.</p>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">„Sie	wird	keine	Zeit	haben,	sorry.	Es	gibt	heut	Mittag	noch	eine	Demo.“	Sie	wendet	sich	an	dich.	„Du	kommst	doch,	richtig?“	Ihr	Tonfall	lässt	keinen	Zweifel	daran,	dass	sie	ein	„Ja“	von	dir	erwartet.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('zwanzig', 'einundzwanzig', 500);">Ich möchte lieber Shoppen gehen</button>
+            </div>
+            <div class="word-container">
+              <button onclick="toggleFolie('zwanzig', 'zweiundzwanzig', 500);">Ich möchte lieber auf die Demo gehen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="einundzwanzig" class="no">
+      <div class="f21-home">
+        <div class="text-containerzp">
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p class="text">Emily	schaut	dich	mit	Enttäuschung	an,	nickt	dann	grimmig	und	sagt	„Nag	gut,	viel	Spaß	euch	dann.“,	auch	wenn	es	eher	wie	eine	Verfluchung	klingt.</p>
+          </div>
+          <p class="prio">Dann	dreht	sie	sich	um,	läuft	den	Flur entlang	und	verschwindet	außer	Sicht. Anthony	schaut	ihr	kurz	nach	und	richtet	seine	Aufmerksamkeit	dann	wieder	auf	dich.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('einundzwanzig', 'siebzehn', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zweiundzwanzig" class="no">
+      <div class="f22-home">
+        <div class="text-containerzp">
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+             <p>Emily	lächelt	als	hätte	sie	gerädert	eine	Schlacht	gewonnen	und	klopft	dir	auf	die	Schulter.	„Triff	mich	nach	der	Schule	auf‘m	Schulhof.“,	sagt	sie	zu	dir	und	verschwindet	dann	zwischen	ein	paar	vorbeilaufenden	Schülerinnen.</p>
+          </div>
+          <p class="prio">Anthonys	Lächeln	ist	ein	bisschen	abgeflacht,	doch	als	die	Schulglocke	läutet	hat	er	sich	wieder	gefangen	und	ihr	führt	euren	normalen	smalltalk,	während	ihr	in	euren	Unterricht	zurückkehrt.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="akt4();">Theorethischer Akt 4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="dreiundzwanzig" class="no">
+      <div class="f23-home">
+        <div class="text-containerzp">
+          <p class="prio">Anthony	verabschiedet	sich	freundlich	und	macht	sich	schon	mal	auf	den	Weg	zu	seinem	Klassenzimmer.</p>
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+             <p>Emily	hingegen	bleibt	noch.	„Später	gibt	es	in	der	Stadt	noch	‘ne	Demo.Du	kommst	doch	mit,	oder?“	Sie	schaut	dich	erwartungsvoll	an.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('dreiundzwanzig', 'vierundzwanzig', 500);">Ich komme mit auf die Demo</button>
+            </div>
+            <div class="word-box">
+              <button onclick="toggleFolie('dreiundzwanzig', 'fuenfundzwanzig', 500);">Nein, ich passe dieses mal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="vierundzwanzig" class="no">
+      <div class="f24-home">
+        <div class="text-containerzp">
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+             <p>„Perfekt!,	Triff	mich	dann	später	auf‘m	Schulhof.“	Sie	lächelt	dir	zu	und	folgt	dann	ein	paar vorbeilaufenden	Schülerinnen	den	Flur	entlang.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="akt4();">Theorethischer Akt 4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fuenfundzwanzig" class="no">
+      <div class="f25-home">
+        <div class="text-containerzp">
+          <div class="narchicht p1 ">
+            <div class="profil">
+              <img src="/project-dummy/Profilbilder/P1.png" alt="Profilbild" class="profile-pic">
+              <div class="name">Emily</div>
+            </div>
+            <p>Na	gut.“,	sagt	sie	mit	überraschter	Enttäuschung,	dreht	sich	um	und	geht	ebenfalls	zu	ihrem Klassenraum.</p>
+          </div>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('fuenfundzwanzig', 'neunzehn', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sechsundzwanzig" class="no">
+      <div class="f26-home">
+        <div class="text-container">
+          <p>Emily murmelt dir "Tschau." zu und verschwindet den Flur entlang. Auch Anthony verabschiedet sich und läuft schonmal zu seinem Klassenraum. Da du alleine auch nicht wirklich etwas machen kannst eiferst du ihm nach und machst dich auch schon mal auf den Weg zu deinem nächsten Unterricht.</p>
+          <div class="word-container">
+            <div class="word-box">
+              <button onclick="toggleFolie('sechsundzwanzig', 'neunzehn', 500);">Weiter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./akt2.js"></script>
+    <script src="./score2.js"></script>
+  </body>

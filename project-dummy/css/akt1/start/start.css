@@ -1,0 +1,25 @@
+#zwei, #drei, #vier, #fünf, #sechs, #quit {
+  background-color: black;
+}
+  
+.f2-home, .f3-home, .f4-home, .f5-home, .f6-home, .quit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.f2-home, .f3-home, .f4-home, .f5-home{
+  background-image: url('/project-dummy/backroundpngs/f2-background.png');
+}
+
+.f6-home {
+  background-image: url('/project-dummy/backroundpngs/f6-background.png');
+}
+
+.quit {
+  background-image: url('/project-dummy/backroundpngs/rick-astly-rick-rolled.gif');
+}
